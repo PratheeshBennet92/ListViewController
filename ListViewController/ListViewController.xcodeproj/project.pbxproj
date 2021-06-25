@@ -10,6 +10,13 @@
 		4A659528268670D700AA498F /* ListViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65951E268670D700AA498F /* ListViewController.framework */; };
 		4A65952D268670D700AA498F /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65952C268670D700AA498F /* ListViewControllerTests.swift */; };
 		4A65952F268670D700AA498F /* ListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A659521268670D700AA498F /* ListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A6595432686721B00AA498F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953A2686721B00AA498F /* ListViewController.swift */; };
+		4A6595442686721B00AA498F /* ListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953B2686721B00AA498F /* ListTableViewDataSource.swift */; };
+		4A6595452686721B00AA498F /* ListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953C2686721B00AA498F /* ListTableViewDelegate.swift */; };
+		4A6595462686721B00AA498F /* ListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953E2686721B00AA498F /* ListUIModel.swift */; };
+		4A6595472686721B00AA498F /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953F2686721B00AA498F /* ListViewModelProtocol.swift */; };
+		4A6595482686721B00AA498F /* DynamicDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595402686721B00AA498F /* DynamicDataCell.swift */; };
+		4A6595492686721B00AA498F /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595422686721B00AA498F /* CellConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		4A659527268670D700AA498F /* ListViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A65952C268670D700AA498F /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
 		4A65952E268670D700AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A65953A2686721B00AA498F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4A65953B2686721B00AA498F /* ListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewDataSource.swift; sourceTree = "<group>"; };
+		4A65953C2686721B00AA498F /* ListTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewDelegate.swift; sourceTree = "<group>"; };
+		4A65953E2686721B00AA498F /* ListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUIModel.swift; sourceTree = "<group>"; };
+		4A65953F2686721B00AA498F /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
+		4A6595402686721B00AA498F /* DynamicDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicDataCell.swift; sourceTree = "<group>"; };
+		4A6595422686721B00AA498F /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,7 @@
 		4A659520268670D700AA498F /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4A6595382686721B00AA498F /* GenericUITableView */,
 				4A659521268670D700AA498F /* ListViewController.h */,
 				4A659522268670D700AA498F /* Info.plist */,
 			);
@@ -84,6 +99,44 @@
 				4A65952E268670D700AA498F /* Info.plist */,
 			);
 			path = ListViewControllerTests;
+			sourceTree = "<group>";
+		};
+		4A6595382686721B00AA498F /* GenericUITableView */ = {
+			isa = PBXGroup;
+			children = (
+				4A6595392686721B00AA498F /* View */,
+				4A65953D2686721B00AA498F /* Protocols */,
+				4A6595412686721B00AA498F /* CellConfigurator */,
+			);
+			path = GenericUITableView;
+			sourceTree = "<group>";
+		};
+		4A6595392686721B00AA498F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A65953A2686721B00AA498F /* ListViewController.swift */,
+				4A65953B2686721B00AA498F /* ListTableViewDataSource.swift */,
+				4A65953C2686721B00AA498F /* ListTableViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A65953D2686721B00AA498F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4A65953E2686721B00AA498F /* ListUIModel.swift */,
+				4A65953F2686721B00AA498F /* ListViewModelProtocol.swift */,
+				4A6595402686721B00AA498F /* DynamicDataCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4A6595412686721B00AA498F /* CellConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				4A6595422686721B00AA498F /* CellConfigurator.swift */,
+			);
+			path = CellConfigurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A6595472686721B00AA498F /* ListViewModelProtocol.swift in Sources */,
+				4A6595452686721B00AA498F /* ListTableViewDelegate.swift in Sources */,
+				4A6595442686721B00AA498F /* ListTableViewDataSource.swift in Sources */,
+				4A6595432686721B00AA498F /* ListViewController.swift in Sources */,
+				4A6595462686721B00AA498F /* ListUIModel.swift in Sources */,
+				4A6595492686721B00AA498F /* CellConfigurator.swift in Sources */,
+				4A6595482686721B00AA498F /* DynamicDataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +449,7 @@
 		4A659536268670D700AA498F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZERKW39Q77;
 				INFOPLIST_FILE = ListViewControllerTests/Info.plist;
@@ -407,6 +468,7 @@
 		4A659537268670D700AA498F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZERKW39Q77;
 				INFOPLIST_FILE = ListViewControllerTests/Info.plist;
