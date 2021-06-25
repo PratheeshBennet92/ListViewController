@@ -17,6 +17,14 @@
 		4A6595472686721B00AA498F /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65953F2686721B00AA498F /* ListViewModelProtocol.swift */; };
 		4A6595482686721B00AA498F /* DynamicDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595402686721B00AA498F /* DynamicDataCell.swift */; };
 		4A6595492686721B00AA498F /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595422686721B00AA498F /* CellConfigurator.swift */; };
+		4A6595512686730700AA498F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595502686730700AA498F /* AppDelegate.swift */; };
+		4A6595532686730700AA498F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595522686730700AA498F /* SceneDelegate.swift */; };
+		4A6595552686730700AA498F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595542686730700AA498F /* ViewController.swift */; };
+		4A6595582686730800AA498F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6595562686730700AA498F /* Main.storyboard */; };
+		4A65955A2686730900AA498F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6595592686730900AA498F /* Assets.xcassets */; };
+		4A65955D2686730900AA498F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A65955B2686730900AA498F /* LaunchScreen.storyboard */; };
+		4A6595682686730900AA498F /* ListViewControllerSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595672686730900AA498F /* ListViewControllerSampleAppTests.swift */; };
+		4A6595732686730900AA498F /* ListViewControllerSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6595722686730900AA498F /* ListViewControllerSampleAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4A65951D268670D700AA498F;
 			remoteInfo = ListViewController;
+		};
+		4A6595642686730900AA498F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A659515268670D700AA498F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A65954D2686730700AA498F;
+			remoteInfo = ListViewControllerSampleApp;
+		};
+		4A65956F2686730900AA498F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A659515268670D700AA498F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A65954D2686730700AA498F;
+			remoteInfo = ListViewControllerSampleApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,6 +65,20 @@
 		4A65953F2686721B00AA498F /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
 		4A6595402686721B00AA498F /* DynamicDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicDataCell.swift; sourceTree = "<group>"; };
 		4A6595422686721B00AA498F /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		4A65954E2686730700AA498F /* ListViewControllerSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListViewControllerSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6595502686730700AA498F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A6595522686730700AA498F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A6595542686730700AA498F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A6595572686730800AA498F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A6595592686730900AA498F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A65955C2686730900AA498F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A65955E2686730900AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6595632686730900AA498F /* ListViewControllerSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewControllerSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6595672686730900AA498F /* ListViewControllerSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerSampleAppTests.swift; sourceTree = "<group>"; };
+		4A6595692686730900AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A65956E2686730900AA498F /* ListViewControllerSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewControllerSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6595722686730900AA498F /* ListViewControllerSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerSampleAppUITests.swift; sourceTree = "<group>"; };
+		4A6595742686730900AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +97,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A65954B2686730700AA498F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6595602686730900AA498F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A65956B2686730900AA498F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +126,9 @@
 			children = (
 				4A659520268670D700AA498F /* ListViewController */,
 				4A65952B268670D700AA498F /* ListViewControllerTests */,
+				4A65954F2686730700AA498F /* ListViewControllerSampleApp */,
+				4A6595662686730900AA498F /* ListViewControllerSampleAppTests */,
+				4A6595712686730900AA498F /* ListViewControllerSampleAppUITests */,
 				4A65951F268670D700AA498F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +138,9 @@
 			children = (
 				4A65951E268670D700AA498F /* ListViewController.framework */,
 				4A659527268670D700AA498F /* ListViewControllerTests.xctest */,
+				4A65954E2686730700AA498F /* ListViewControllerSampleApp.app */,
+				4A6595632686730900AA498F /* ListViewControllerSampleAppTests.xctest */,
+				4A65956E2686730900AA498F /* ListViewControllerSampleAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +202,38 @@
 			path = CellConfigurator;
 			sourceTree = "<group>";
 		};
+		4A65954F2686730700AA498F /* ListViewControllerSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				4A6595502686730700AA498F /* AppDelegate.swift */,
+				4A6595522686730700AA498F /* SceneDelegate.swift */,
+				4A6595542686730700AA498F /* ViewController.swift */,
+				4A6595562686730700AA498F /* Main.storyboard */,
+				4A6595592686730900AA498F /* Assets.xcassets */,
+				4A65955B2686730900AA498F /* LaunchScreen.storyboard */,
+				4A65955E2686730900AA498F /* Info.plist */,
+			);
+			path = ListViewControllerSampleApp;
+			sourceTree = "<group>";
+		};
+		4A6595662686730900AA498F /* ListViewControllerSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6595672686730900AA498F /* ListViewControllerSampleAppTests.swift */,
+				4A6595692686730900AA498F /* Info.plist */,
+			);
+			path = ListViewControllerSampleAppTests;
+			sourceTree = "<group>";
+		};
+		4A6595712686730900AA498F /* ListViewControllerSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A6595722686730900AA498F /* ListViewControllerSampleAppUITests.swift */,
+				4A6595742686730900AA498F /* Info.plist */,
+			);
+			path = ListViewControllerSampleAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -189,6 +284,59 @@
 			productReference = 4A659527268670D700AA498F /* ListViewControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4A65954D2686730700AA498F /* ListViewControllerSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6595752686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleApp" */;
+			buildPhases = (
+				4A65954A2686730700AA498F /* Sources */,
+				4A65954B2686730700AA498F /* Frameworks */,
+				4A65954C2686730700AA498F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ListViewControllerSampleApp;
+			productName = ListViewControllerSampleApp;
+			productReference = 4A65954E2686730700AA498F /* ListViewControllerSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A6595622686730900AA498F /* ListViewControllerSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A6595782686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleAppTests" */;
+			buildPhases = (
+				4A65955F2686730900AA498F /* Sources */,
+				4A6595602686730900AA498F /* Frameworks */,
+				4A6595612686730900AA498F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A6595652686730900AA498F /* PBXTargetDependency */,
+			);
+			name = ListViewControllerSampleAppTests;
+			productName = ListViewControllerSampleAppTests;
+			productReference = 4A6595632686730900AA498F /* ListViewControllerSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A65956D2686730900AA498F /* ListViewControllerSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A65957B2686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleAppUITests" */;
+			buildPhases = (
+				4A65956A2686730900AA498F /* Sources */,
+				4A65956B2686730900AA498F /* Frameworks */,
+				4A65956C2686730900AA498F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A6595702686730900AA498F /* PBXTargetDependency */,
+			);
+			name = ListViewControllerSampleAppUITests;
+			productName = ListViewControllerSampleAppUITests;
+			productReference = 4A65956E2686730900AA498F /* ListViewControllerSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +351,17 @@
 					};
 					4A659526268670D700AA498F = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					4A65954D2686730700AA498F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4A6595622686730900AA498F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4A65954D2686730700AA498F;
+					};
+					4A65956D2686730900AA498F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4A65954D2686730700AA498F;
 					};
 				};
 			};
@@ -221,6 +380,9 @@
 			targets = (
 				4A65951D268670D700AA498F /* ListViewController */,
 				4A659526268670D700AA498F /* ListViewControllerTests */,
+				4A65954D2686730700AA498F /* ListViewControllerSampleApp */,
+				4A6595622686730900AA498F /* ListViewControllerSampleAppTests */,
+				4A65956D2686730900AA498F /* ListViewControllerSampleAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +396,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A659525268670D700AA498F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A65954C2686730700AA498F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A65955D2686730900AA498F /* LaunchScreen.storyboard in Resources */,
+				4A65955A2686730900AA498F /* Assets.xcassets in Resources */,
+				4A6595582686730800AA498F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A6595612686730900AA498F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A65956C2686730900AA498F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +451,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A65954A2686730700AA498F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6595552686730700AA498F /* ViewController.swift in Sources */,
+				4A6595512686730700AA498F /* AppDelegate.swift in Sources */,
+				4A6595532686730700AA498F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A65955F2686730900AA498F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6595682686730900AA498F /* ListViewControllerSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A65956A2686730900AA498F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6595732686730900AA498F /* ListViewControllerSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,7 +485,36 @@
 			target = 4A65951D268670D700AA498F /* ListViewController */;
 			targetProxy = 4A659529268670D700AA498F /* PBXContainerItemProxy */;
 		};
+		4A6595652686730900AA498F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A65954D2686730700AA498F /* ListViewControllerSampleApp */;
+			targetProxy = 4A6595642686730900AA498F /* PBXContainerItemProxy */;
+		};
+		4A6595702686730900AA498F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A65954D2686730700AA498F /* ListViewControllerSampleApp */;
+			targetProxy = 4A65956F2686730900AA498F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A6595562686730700AA498F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6595572686730800AA498F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A65955B2686730900AA498F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A65955C2686730900AA498F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4A659530268670D700AA498F /* Debug */ = {
@@ -484,6 +725,128 @@
 			};
 			name = Release;
 		};
+		4A6595762686730900AA498F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A6595772686730900AA498F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A6595792686730900AA498F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListViewControllerSampleApp.app/ListViewControllerSampleApp";
+			};
+			name = Debug;
+		};
+		4A65957A2686730900AA498F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListViewControllerSampleApp.app/ListViewControllerSampleApp";
+			};
+			name = Release;
+		};
+		4A65957C2686730900AA498F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ListViewControllerSampleApp;
+			};
+			name = Debug;
+		};
+		4A65957D2686730900AA498F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZERKW39Q77;
+				INFOPLIST_FILE = ListViewControllerSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratheesh.ListViewControllerSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ListViewControllerSampleApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,6 +873,33 @@
 			buildConfigurations = (
 				4A659536268670D700AA498F /* Debug */,
 				4A659537268670D700AA498F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6595752686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6595762686730900AA498F /* Debug */,
+				4A6595772686730900AA498F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A6595782686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6595792686730900AA498F /* Debug */,
+				4A65957A2686730900AA498F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A65957B2686730900AA498F /* Build configuration list for PBXNativeTarget "ListViewControllerSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A65957C2686730900AA498F /* Debug */,
+				4A65957D2686730900AA498F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
