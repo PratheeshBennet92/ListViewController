@@ -29,7 +29,5 @@ class ViewController: UIViewController {
     listView.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
     listView.didMove(toParent: self)
   }
-
-
 }
 

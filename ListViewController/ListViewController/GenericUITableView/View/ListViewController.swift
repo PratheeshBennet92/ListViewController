@@ -1,16 +1,16 @@
 import UIKit
 public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController where Cell: UITableViewCell {
   // MARK: Property Declrations
-  var selectedCallback: ((ListUIModel) -> Void)?
+  public var selectedCallback: ((ListUIModel) -> Void)?
   var viewModel: ListViewModelProtocol?
-  private lazy var listTableView: UITableView = {
+  public lazy var listTableView: UITableView = {
     let table = UITableView()
     table.translatesAutoresizingMaskIntoConstraints = false
     table.separatorStyle = .none
     return table
   }()
-  var listDataSource: ListTableViewDataSource<Cell, DataType>?
-  var listDelegate: ListTableViewDelegate?
+  public var listDataSource: ListTableViewDataSource<Cell, DataType>?
+  public var listDelegate: ListTableViewDelegate?
   // MARK: Lifecycle Methods
   public override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)

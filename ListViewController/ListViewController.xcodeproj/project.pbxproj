@@ -11,6 +11,10 @@
 		4A4B36CD2688F0CD00FB18D7 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36CB2688F0CD00FB18D7 /* CardCell.swift */; };
 		4A4B36CE2688F0CD00FB18D7 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B36CC2688F0CD00FB18D7 /* CardCell.xib */; };
 		4A4B36D12688F16200FB18D7 /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36D02688F16200FB18D7 /* LisViewModel.swift */; };
+		4A4B36DA2688F42C00FB18D7 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36D42688F42C00FB18D7 /* CardCell.swift */; };
+		4A4B36DB2688F42C00FB18D7 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B36D52688F42C00FB18D7 /* CardCell.xib */; };
+		4A4B36DC2688F42C00FB18D7 /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36D72688F42C00FB18D7 /* LisViewModel.swift */; };
+		4A4B36DD2688F42C00FB18D7 /* TestListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36D92688F42C00FB18D7 /* TestListUIModel.swift */; };
 		4A659528268670D700AA498F /* ListViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65951E268670D700AA498F /* ListViewController.framework */; };
 		4A65952D268670D700AA498F /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65952C268670D700AA498F /* ListViewControllerTests.swift */; };
 		4A65952F268670D700AA498F /* ListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A659521268670D700AA498F /* ListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +64,10 @@
 		4A4B36CB2688F0CD00FB18D7 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		4A4B36CC2688F0CD00FB18D7 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		4A4B36D02688F16200FB18D7 /* LisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
+		4A4B36D42688F42C00FB18D7 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4A4B36D52688F42C00FB18D7 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		4A4B36D72688F42C00FB18D7 /* LisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
+		4A4B36D92688F42C00FB18D7 /* TestListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListUIModel.swift; sourceTree = "<group>"; };
 		4A65951E268670D700AA498F /* ListViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ListViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A659521268670D700AA498F /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		4A659522268670D700AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +154,42 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4A4B36D22688F41500FB18D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B36C82688F01100FB18D7 /* TestListUIModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4A4B36D32688F42C00FB18D7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B36D42688F42C00FB18D7 /* CardCell.swift */,
+				4A4B36D52688F42C00FB18D7 /* CardCell.xib */,
+			);
+			name = Cells;
+			path = ListViewControllerTests/Cells;
+			sourceTree = SOURCE_ROOT;
+		};
+		4A4B36D62688F42C00FB18D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B36D72688F42C00FB18D7 /* LisViewModel.swift */,
+			);
+			name = ViewModel;
+			path = ListViewControllerTests/ViewModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		4A4B36D82688F42C00FB18D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B36D92688F42C00FB18D7 /* TestListUIModel.swift */,
+			);
+			name = Entity;
+			path = ListViewControllerTests/Entity;
+			sourceTree = SOURCE_ROOT;
+		};
 		4A659514268670D700AA498F = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +227,9 @@
 		4A65952B268670D700AA498F /* ListViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A4B36D22688F41500FB18D7 /* Entity */,
+				4A4B36CF2688F15300FB18D7 /* ViewModel */,
+				4A4B36CA2688F0CD00FB18D7 /* Cells */,
 				4A65952C268670D700AA498F /* ListViewControllerTests.swift */,
 				4A65952E268670D700AA498F /* Info.plist */,
 			);
@@ -230,8 +277,9 @@
 		4A65954F2686730700AA498F /* ListViewControllerSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B36CF2688F15300FB18D7 /* ViewModel */,
-				4A4B36CA2688F0CD00FB18D7 /* Cells */,
+				4A4B36D32688F42C00FB18D7 /* Cells */,
+				4A4B36D82688F42C00FB18D7 /* Entity */,
+				4A4B36D62688F42C00FB18D7 /* ViewModel */,
 				4A6595502686730700AA498F /* AppDelegate.swift */,
 				4A6595522686730700AA498F /* SceneDelegate.swift */,
 				4A6595542686730700AA498F /* ViewController.swift */,
@@ -239,7 +287,6 @@
 				4A6595592686730900AA498F /* Assets.xcassets */,
 				4A65955B2686730900AA498F /* LaunchScreen.storyboard */,
 				4A65955E2686730900AA498F /* Info.plist */,
-				4A4B36C82688F01100FB18D7 /* TestListUIModel.swift */,
 			);
 			path = ListViewControllerSampleApp;
 			sourceTree = "<group>";
@@ -436,6 +483,7 @@
 			files = (
 				4A65955D2686730900AA498F /* LaunchScreen.storyboard in Resources */,
 				4A65955A2686730900AA498F /* Assets.xcassets in Resources */,
+				4A4B36DB2688F42C00FB18D7 /* CardCell.xib in Resources */,
 				4A6595582686730800AA498F /* Main.storyboard in Resources */,
 				4A4B36CE2688F0CD00FB18D7 /* CardCell.xib in Resources */,
 			);
@@ -484,12 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4B36DA2688F42C00FB18D7 /* CardCell.swift in Sources */,
+				4A4B36DC2688F42C00FB18D7 /* LisViewModel.swift in Sources */,
 				4A4B36CD2688F0CD00FB18D7 /* CardCell.swift in Sources */,
 				4A4B36D12688F16200FB18D7 /* LisViewModel.swift in Sources */,
 				4A6595552686730700AA498F /* ViewController.swift in Sources */,
 				4A6595512686730700AA498F /* AppDelegate.swift in Sources */,
 				4A6595532686730700AA498F /* SceneDelegate.swift in Sources */,
 				4A4B36C92688F01100FB18D7 /* TestListUIModel.swift in Sources */,
+				4A4B36DD2688F42C00FB18D7 /* TestListUIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

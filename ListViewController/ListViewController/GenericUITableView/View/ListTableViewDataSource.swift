@@ -2,9 +2,9 @@ import UIKit
 protocol ListDataSource: AnyObject {
 
 }
-class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSObject, UITableViewDataSource where Cell: UITableViewCell {
+public class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSObject, UITableViewDataSource where Cell: UITableViewCell {
   // MARK: Property Declrations
-  var dataSource: [ListUIModel]? {
+  public var dataSource: [ListUIModel]? {
     didSet {
       self.dataSetCallback?()
     }
@@ -16,13 +16,13 @@ class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIModel>: NSO
   init(delegate: ListDataSource) {
     self.delegate = delegate
   }
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dataSource?.count ?? .zero
   }
-  func numberOfSections(in tableView: UITableView) -> Int {
+  public func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: Cell.self)) as? Cell else {
       return UITableViewCell()
     }
