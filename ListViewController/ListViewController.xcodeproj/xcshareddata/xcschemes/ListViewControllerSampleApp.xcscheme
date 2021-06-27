@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A65951D268670D700AA498F"
-               BuildableName = "ListViewController.framework"
-               BlueprintName = "ListViewController"
+               BlueprintIdentifier = "4A65954D2686730700AA498F"
+               BuildableName = "ListViewControllerSampleApp.app"
+               BlueprintName = "ListViewControllerSampleApp"
                ReferencedContainer = "container:ListViewController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A659526268670D700AA498F"
-               BuildableName = "ListViewControllerTests.xctest"
-               BlueprintName = "ListViewControllerTests"
+               BlueprintIdentifier = "4A6595622686730900AA498F"
+               BuildableName = "ListViewControllerSampleAppTests.xctest"
+               BlueprintName = "ListViewControllerSampleAppTests"
+               ReferencedContainer = "container:ListViewController.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4A65956D2686730900AA498F"
+               BuildableName = "ListViewControllerSampleAppUITests.xctest"
+               BlueprintName = "ListViewControllerSampleAppUITests"
                ReferencedContainer = "container:ListViewController.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -51,6 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4A65954D2686730700AA498F"
+            BuildableName = "ListViewControllerSampleApp.app"
+            BlueprintName = "ListViewControllerSampleApp"
+            ReferencedContainer = "container:ListViewController.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -58,15 +78,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A65951D268670D700AA498F"
-            BuildableName = "ListViewController.framework"
-            BlueprintName = "ListViewController"
+            BlueprintIdentifier = "4A65954D2686730700AA498F"
+            BuildableName = "ListViewControllerSampleApp.app"
+            BlueprintName = "ListViewControllerSampleApp"
             ReferencedContainer = "container:ListViewController.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
