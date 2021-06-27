@@ -1,4 +1,4 @@
 import Foundation
-protocol ListUIModel: Codable {
+public protocol ListUIModel: Codable {
   var identifier: String? {get set}
 }

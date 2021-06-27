@@ -1,5 +1,5 @@
 import UIKit
-class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController where Cell: UITableViewCell {
+public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController where Cell: UITableViewCell {
   // MARK: Property Declrations
   var selectedCallback: ((ListUIModel) -> Void)?
   var viewModel: ListViewModelProtocol?
@@ -12,25 +12,25 @@ class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewCo
   var listDataSource: ListTableViewDataSource<Cell, DataType>?
   var listDelegate: ListTableViewDelegate?
   // MARK: Lifecycle Methods
-  override func viewDidAppear(_ animated: Bool) {
+  public override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
   }
-  override func viewDidLoad() {
+  public override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.isHidden = true
     configureTable()
     addTableView()
   }
-  override func viewWillAppear(_ animated: Bool) {
+  public override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
-  override func viewWillDisappear(_ animated: Bool) {
+  public override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
   }
   init() {
     super.init(nibName: nil, bundle: nil)
   }
-  convenience init(viewModel: ListViewModelProtocol) {
+  public convenience init(viewModel: ListViewModelProtocol) {
     self.init()
     self.viewModel = viewModel
   }
