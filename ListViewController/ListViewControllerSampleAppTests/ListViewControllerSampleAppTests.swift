@@ -45,8 +45,8 @@ class ListViewControllerSampleAppTests: XCTestCase {
   func testCellForRow() {
     let indexPath = IndexPath(row: 0, section: 0)
     let cell = listView.listTableView.dataSource?.tableView(listView.listTableView, cellForRowAt: indexPath)
-    (cell as? CardCell)?.titleLabel.text = "Test Cell 1"
-    XCTAssert( (cell as? CardCell)?.titleLabel.text == "Test Cell 1", "Cell for Row")
+    (cell as? CardCell)?.textLabel?.text = "Test Cell 1"
+    XCTAssert( (cell as? CardCell)?.textLabel?.text == "Test Cell 1", "Cell for Row")
     
   }
 

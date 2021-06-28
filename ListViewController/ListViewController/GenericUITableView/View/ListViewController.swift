@@ -17,6 +17,8 @@ public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: U
   }
   public override func viewDidLoad() {
     super.viewDidLoad()
+    self.loadView()
+    self.loadViewIfNeeded()
     self.navigationController?.navigationBar.isHidden = true
     configureTable()
     addTableView()
@@ -41,7 +43,8 @@ public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: U
   }
   // MARK: Table Configuration
   private func configureTable() {
-    listTableView.register(UINib(nibName: String(describing: Cell.self), bundle: nil), forCellReuseIdentifier: String(describing: Cell.self))
+   // listTableView.register(UINib(nibName: String(describing: Cell.self), bundle: nil), forCellReuseIdentifier: String(describing: Cell.self))
+    listTableView.register(Cell.self, forCellReuseIdentifier: String(describing: Cell.self))
     listDataSource = ListTableViewDataSource<Cell, DataType>(delegate: self)
     listDataSource?.dataSource = viewModel?.outputModel
     listTableView.rowHeight = UITableView.automaticDimension

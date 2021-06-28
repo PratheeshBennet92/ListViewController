@@ -1,35 +1,31 @@
+//
+//  CardCell.swift
+//  ListViewControllerSampleApp
+//
+//  Created by Pratheesh on 6/28/21.
+//
+
 import UIKit
 import ListViewController
 class CardCell: UITableViewCell, DynamicDataCell {
   var buttonPressedAction: ((TestListUIModel?) -> Void)?
-  typealias DataType =  TestListUIModel
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var containerView: UIView!
+  
+  typealias DataType = TestListUIModel
+  
 
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    configureCell()
-  }
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-  }
-  // MARK: Shadow Declrations
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    self.containerView.backgroundColor = UIColor.white
-    containerView.layer.masksToBounds = false
-    containerView.layer.cornerRadius = 8
-    containerView.layer.shadowColor = UIColor.black.cgColor
-    containerView.layer.shadowOffset = CGSize(width:0.5, height:4.0);
-    containerView.layer.shadowOpacity = 0.5
-    containerView.layer.shadowRadius = 5.0
-  }
-  private func configureCell() {
-    self.selectionStyle = .none
-    self.contentView.backgroundColor = .clear
-  }
-  // MARK: Data binding
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
   func configure(_ dataType: TestListUIModel?) {
-    titleLabel.text = dataType?.name
+    self.textLabel?.text = dataType?.name
   }
+  
+
 }
