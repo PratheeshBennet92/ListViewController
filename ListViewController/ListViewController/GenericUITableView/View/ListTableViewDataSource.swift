@@ -9,6 +9,7 @@ public class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIMode
       self.dataSetCallback?()
     }
   }
+  public var noOfSections = 1
   var dataSetCallback: (() -> Void)?
   var configurator: CellConfigurator<Cell, DataType>!
   weak var delegate: ListDataSource?
@@ -17,10 +18,13 @@ public class ListTableViewDataSource<Cell: DynamicDataCell, DataType: ListUIMode
     self.delegate = delegate
   }
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dataSource?.count ?? .zero
+    guard let rowsCount = dataSource?.count else {
+      return .zero
+    }
+    return rowsCount
   }
   public func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
+    return noOfSections
   }
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: Cell.self)) as? Cell else {

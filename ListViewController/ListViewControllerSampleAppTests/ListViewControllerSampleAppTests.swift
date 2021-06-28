@@ -14,6 +14,7 @@ class ListViewControllerSampleAppTests: XCTestCase {
     let viewModel = ListViewModel()
     let view = ListViewController<CardCell, TestListUIModel>(viewModel: viewModel)
     view.view.translatesAutoresizingMaskIntoConstraints  = false
+    view.loadView()
     return view
   }()
     override func setUpWithError() throws {
@@ -47,7 +48,27 @@ class ListViewControllerSampleAppTests: XCTestCase {
     let cell = listView.listTableView.dataSource?.tableView(listView.listTableView, cellForRowAt: indexPath)
     (cell as? CardCell)?.textLabel?.text = "Test Cell 1"
     XCTAssert( (cell as? CardCell)?.textLabel?.text == "Test Cell 1", "Cell for Row")
-    
   }
-
+  func testListReload() {
+    listView.listReload()
+  }
+  func testNoOfRowsInSection() {
+    let rowsCount = listView.listTableView.dataSource?.tableView(listView.listTableView, numberOfRowsInSection: 0)
+    XCTAssert(rowsCount == 2)
+    XCTAssert(listView.listTableView.numberOfRows(inSection: 0) == 2)
+  }
+  func testNoOfSections() {
+    let sectionCount = listView.listTableView.dataSource?.numberOfSections?(in: listView.listTableView)
+    XCTAssert(sectionCount == 1)
+    XCTAssert(listView.listTableView.numberOfSections == 1)
+  }
+  func testNegativeNoOfRowsInSection() {
+    let viewModelNilData = ListViewModel()
+    viewModelNilData.outputModel = nil
+    listView.viewModel = viewModelNilData
+    listView.listDataSource?.dataSource = nil
+    let rowsCount = listView.listTableView.dataSource?.tableView(listView.listTableView, numberOfRowsInSection: 0)
+    XCTAssert(rowsCount == 0)
+    listView.viewModel = ListViewModel()
+  }
 }

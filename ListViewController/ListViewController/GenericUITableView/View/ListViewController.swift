@@ -2,7 +2,7 @@ import UIKit
 public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: UIViewController where Cell: UITableViewCell {
   // MARK: Property Declrations
   public var selectedCallback: ((ListUIModel) -> Void)?
-  var viewModel: ListViewModelProtocol?
+  public var viewModel: ListViewModelProtocol?
   public lazy var listTableView: UITableView = {
     let table = UITableView()
     table.translatesAutoresizingMaskIntoConstraints = false
@@ -11,24 +11,6 @@ public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: U
   }()
   public var listDataSource: ListTableViewDataSource<Cell, DataType>?
   public var listDelegate: ListTableViewDelegate?
-  // MARK: Lifecycle Methods
-  public override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-  }
-  public override func viewDidLoad() {
-    super.viewDidLoad()
-    self.loadView()
-    self.loadViewIfNeeded()
-    self.navigationController?.navigationBar.isHidden = true
-    configureTable()
-    addTableView()
-  }
-  public override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-  }
-  public override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-  }
   init() {
     super.init(nibName: nil, bundle: nil)
   }
@@ -39,7 +21,14 @@ public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: U
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  deinit {
+  // MARK: Lifecycle Methods
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    self.loadView()
+    self.loadViewIfNeeded()
+    self.navigationController?.navigationBar.isHidden = true
+    configureTable()
+    addTableView()
   }
   // MARK: Table Configuration
   private func configureTable() {
@@ -63,7 +52,7 @@ public class ListViewController<Cell: DynamicDataCell, DataType: ListUIModel>: U
     listTableView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: .zero).isActive = true
     listTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: .zero).isActive = true
   }
-  func reload() {
+  public func listReload() {
     listTableView.reloadData()
   }
 }
