@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A4B36FF2688FED000FB18D7 /* TestListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36FA2688FED000FB18D7 /* TestListUIModel.swift */; };
-		4A4B37002688FED000FB18D7 /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B36FC2688FED000FB18D7 /* LisViewModel.swift */; };
-		4A4B370A2689171000FB18D7 /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B37042689171000FB18D7 /* LisViewModel.swift */; };
-		4A4B370D2689171000FB18D7 /* TestListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B37092689171000FB18D7 /* TestListUIModel.swift */; };
-		4A5376532689837200C1986D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5376522689837200C1986D /* CardCell.swift */; };
-		4A537655268983B500C1986D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A537654268983B500C1986D /* CardCell.swift */; };
+		4A537666268986B400C1986D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A537661268986B400C1986D /* CardCell.swift */; };
+		4A537667268986B400C1986D /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A537663268986B400C1986D /* LisViewModel.swift */; };
+		4A537668268986B400C1986D /* TestListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A537665268986B400C1986D /* TestListUIModel.swift */; };
+		4A53766F268986BB00C1986D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53766A268986BB00C1986D /* CardCell.swift */; };
+		4A537670268986BB00C1986D /* LisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53766C268986BB00C1986D /* LisViewModel.swift */; };
+		4A537671268986BB00C1986D /* TestListUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53766E268986BB00C1986D /* TestListUIModel.swift */; };
 		4A659528268670D700AA498F /* ListViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65951E268670D700AA498F /* ListViewController.framework */; };
 		4A65952D268670D700AA498F /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65952C268670D700AA498F /* ListViewControllerTests.swift */; };
 		4A65952F268670D700AA498F /* ListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A659521268670D700AA498F /* ListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,12 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A4B36FA2688FED000FB18D7 /* TestListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListUIModel.swift; sourceTree = "<group>"; };
-		4A4B36FC2688FED000FB18D7 /* LisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
-		4A4B37042689171000FB18D7 /* LisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
-		4A4B37092689171000FB18D7 /* TestListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListUIModel.swift; sourceTree = "<group>"; };
-		4A5376522689837200C1986D /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		4A537654268983B500C1986D /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4A537661268986B400C1986D /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4A537663268986B400C1986D /* LisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
+		4A537665268986B400C1986D /* TestListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListUIModel.swift; sourceTree = "<group>"; };
+		4A53766A268986BB00C1986D /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		4A53766C268986BB00C1986D /* LisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisViewModel.swift; sourceTree = "<group>"; };
+		4A53766E268986BB00C1986D /* TestListUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListUIModel.swift; sourceTree = "<group>"; };
 		4A65951E268670D700AA498F /* ListViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ListViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A659521268670D700AA498F /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		4A659522268670D700AA498F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,59 +133,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A4B36F62688FED000FB18D7 /* Cells */ = {
+		4A537660268986B400C1986D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4A537654268983B500C1986D /* CardCell.swift */,
+				4A537661268986B400C1986D /* CardCell.swift */,
 			);
-			name = Cells;
-			path = ListViewController/GenericUITableView/Cells;
-			sourceTree = SOURCE_ROOT;
+			path = Cells;
+			sourceTree = "<group>";
 		};
-		4A4B36F92688FED000FB18D7 /* Entity */ = {
+		4A537662268986B400C1986D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B36FA2688FED000FB18D7 /* TestListUIModel.swift */,
+				4A537663268986B400C1986D /* LisViewModel.swift */,
 			);
-			name = Entity;
-			path = ListViewController/GenericUITableView/Entity;
-			sourceTree = SOURCE_ROOT;
+			path = ViewModel;
+			sourceTree = "<group>";
 		};
-		4A4B36FB2688FED000FB18D7 /* ViewModel */ = {
+		4A537664268986B400C1986D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B36FC2688FED000FB18D7 /* LisViewModel.swift */,
+				4A537665268986B400C1986D /* TestListUIModel.swift */,
 			);
-			name = ViewModel;
-			path = ListViewController/GenericUITableView/ViewModel;
-			sourceTree = SOURCE_ROOT;
+			path = Entity;
+			sourceTree = "<group>";
 		};
-		4A4B37032689171000FB18D7 /* ViewModel */ = {
+		4A537669268986BB00C1986D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B37042689171000FB18D7 /* LisViewModel.swift */,
+				4A53766A268986BB00C1986D /* CardCell.swift */,
 			);
-			name = ViewModel;
-			path = ListViewController/GenericUITableView/ViewModel;
-			sourceTree = SOURCE_ROOT;
+			path = Cells;
+			sourceTree = "<group>";
 		};
-		4A4B37052689171000FB18D7 /* Cells */ = {
+		4A53766B268986BB00C1986D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4A5376522689837200C1986D /* CardCell.swift */,
+				4A53766C268986BB00C1986D /* LisViewModel.swift */,
 			);
-			name = Cells;
-			path = ListViewController/GenericUITableView/Cells;
-			sourceTree = SOURCE_ROOT;
+			path = ViewModel;
+			sourceTree = "<group>";
 		};
-		4A4B37082689171000FB18D7 /* Entity */ = {
+		4A53766D268986BB00C1986D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B37092689171000FB18D7 /* TestListUIModel.swift */,
+				4A53766E268986BB00C1986D /* TestListUIModel.swift */,
 			);
-			name = Entity;
-			path = ListViewController/GenericUITableView/Entity;
-			sourceTree = SOURCE_ROOT;
+			path = Entity;
+			sourceTree = "<group>";
 		};
 		4A659514268670D700AA498F = {
 			isa = PBXGroup;
@@ -224,6 +218,9 @@
 		4A65952B268670D700AA498F /* ListViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A537669268986BB00C1986D /* Cells */,
+				4A53766D268986BB00C1986D /* Entity */,
+				4A53766B268986BB00C1986D /* ViewModel */,
 				4A65952C268670D700AA498F /* ListViewControllerTests.swift */,
 				4A65952E268670D700AA498F /* Info.plist */,
 			);
@@ -233,9 +230,6 @@
 		4A6595382686721B00AA498F /* GenericUITableView */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B36F62688FED000FB18D7 /* Cells */,
-				4A4B36F92688FED000FB18D7 /* Entity */,
-				4A4B36FB2688FED000FB18D7 /* ViewModel */,
 				4A6595392686721B00AA498F /* View */,
 				4A65953D2686721B00AA498F /* Protocols */,
 				4A6595412686721B00AA498F /* CellConfigurator */,
@@ -274,9 +268,9 @@
 		4A65954F2686730700AA498F /* ListViewControllerSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				4A4B37052689171000FB18D7 /* Cells */,
-				4A4B37082689171000FB18D7 /* Entity */,
-				4A4B37032689171000FB18D7 /* ViewModel */,
+				4A537660268986B400C1986D /* Cells */,
+				4A537664268986B400C1986D /* Entity */,
+				4A537662268986B400C1986D /* ViewModel */,
 				4A6595502686730700AA498F /* AppDelegate.swift */,
 				4A6595522686730700AA498F /* SceneDelegate.swift */,
 				4A6595542686730700AA498F /* ViewController.swift */,
@@ -510,11 +504,8 @@
 				4A6595442686721B00AA498F /* ListTableViewDataSource.swift in Sources */,
 				4A6595432686721B00AA498F /* ListViewController.swift in Sources */,
 				4A6595462686721B00AA498F /* ListUIModel.swift in Sources */,
-				4A537655268983B500C1986D /* CardCell.swift in Sources */,
 				4A6595492686721B00AA498F /* CellConfigurator.swift in Sources */,
 				4A6595482686721B00AA498F /* DynamicDataCell.swift in Sources */,
-				4A4B36FF2688FED000FB18D7 /* TestListUIModel.swift in Sources */,
-				4A4B37002688FED000FB18D7 /* LisViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +514,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A65952D268670D700AA498F /* ListViewControllerTests.swift in Sources */,
+				4A537670268986BB00C1986D /* LisViewModel.swift in Sources */,
+				4A53766F268986BB00C1986D /* CardCell.swift in Sources */,
+				4A537671268986BB00C1986D /* TestListUIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,11 +525,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6595552686730700AA498F /* ViewController.swift in Sources */,
-				4A4B370A2689171000FB18D7 /* LisViewModel.swift in Sources */,
 				4A6595512686730700AA498F /* AppDelegate.swift in Sources */,
 				4A6595532686730700AA498F /* SceneDelegate.swift in Sources */,
-				4A4B370D2689171000FB18D7 /* TestListUIModel.swift in Sources */,
-				4A5376532689837200C1986D /* CardCell.swift in Sources */,
+				4A537666268986B400C1986D /* CardCell.swift in Sources */,
+				4A537667268986B400C1986D /* LisViewModel.swift in Sources */,
+				4A537668268986B400C1986D /* TestListUIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
